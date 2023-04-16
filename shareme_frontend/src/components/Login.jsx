@@ -22,7 +22,7 @@ const Login = () => {
         const doc = {
           _id: uid,
           _type: "user",
-          username: displayName,
+          userName: displayName,
           image: photoURL,
         };
 
