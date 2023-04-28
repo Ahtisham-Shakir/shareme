@@ -19,7 +19,6 @@ const Home = () => {
   useEffect(() => {
     const query = userQuery(userInfo?.uid);
     client.fetch(query).then((data) => {
-      console.log(data);
       setUser(data[0]);
     });
   }, []);
