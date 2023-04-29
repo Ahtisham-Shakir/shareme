@@ -15,7 +15,6 @@ const Login = () => {
   const handleAuth = () => {
     signInWithPopup(auth, provider)
       .then((response) => {
-        console.log(response);
         localStorage.setItem("user", JSON.stringify(response?.user));
         const { displayName, photoURL, uid } = response?.user;
 
